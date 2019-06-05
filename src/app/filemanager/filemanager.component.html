@@ -1,0 +1,169 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-md-12">
+      <h2>File Manager </h2>
+      <ol class="breadcrumb">
+        <li>
+          <a routerLink="/dashboard/userdashboard">Dashboard</a>
+        </li>
+        <li>
+          <a [routerLink]="['/dashboard/account-settings','exam-name']"> Account Settings </a>
+        </li>
+        <li>
+          <a [routerLink]="['/dashboard/filemanager','exam-name']"> File Manager </a>
+        </li>
+        <!--<li class="active">-->
+        <!--<strong>Downloaded Exams</strong>-->
+        <!--</li>-->
+      </ol>
+    </div>
+  </div>
+
+
+
+<div class="wrapper wrapper-content animated fadeInRight ">
+        <div class="row">
+                        <div class="ibox">
+                                        <div class="ibox-content">
+                
+                                                <div class="row wrapper border-bottom white-bg page-heading">
+                                                                        <div class="col-md-12">
+                                                                                        <div class="col-md-6  ">
+                                                                                                        <div class="col-xs-12">
+                                                                                                                <div>
+                                                                                                                        <h2>Educational Certificates</h2>
+                                                                                                                        <p-fileUpload mode="advanced"   name="myfile[]" #educationalCertificates  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        
+                                                                                        <div class="col-md-6">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Academic And Professional Qualification </h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #academicAndProfessionalQaulification  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Prizes Won </h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #prizes  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Honours </h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #honours  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>National Recognitions </h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #nationalRecognition  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Publications</h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #publications  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                                </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Publications</h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #internationalRecognitions  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Commendations</h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #commendation  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Special Assignments</h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #specialAssignements  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-6  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Extra Curricula Activites</h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #extraCurriculaActivities  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                
+                                                                                        <div class="col-md-12  ">
+                                                                                                <div class="col-xs-12">
+                                                                                                        <div>
+                                                                                                                <h2>Awards</h2>
+                                                                                                                <p-fileUpload mode="advanced"   name="myfile[]" #awards  multiple="multiple" mode="advanced" (onUpload)="onBasicUpload($event)"  (onError) = onBasicError($event)></p-fileUpload>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>         
+                                                                        </div>
+                                                        </div>                                
+                
+                                        </div>
+                </div>
+
+
+
+                <div class="ibox">
+                                <div class="ibox-content">
+
+                                                <div class="bs br" style="margin-bottom: 20%">
+                                                                <h2 style="text-transform: capitalize ; color: rgb(0, 110, 255); padding-top: 30px ; " > &nbsp; &nbsp;&nbsp; &nbsp;<strong>Your File Uploads</strong>  </h2>
+                                                                <p-dataTable #dt11  [tableStyle]="{'table-layout':'auto'}"  [value]="files" [paginator]="true" [rows]="30" [scrollable]="true">
+                                                                <p-column field="owner" header="Owned By" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+                                                                <p-column field="fileName" header="File Name" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+                                                                <p-column field="collectionName" header="Upload To" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+                                                                
+                                                                <p-column field="fileId" header="Action" [sortable]="true"  >
+                                                                <ng-template let-index = "rowIndex"  let-data ="rowData" pTemplate="body">
+                                        
+                                        
+                                                                        <button  style="margin-top: 10px;" class="btn btn-success" type="button" (click)="downloadFile(data.fileId, data.collectionName , data.fileName)">
+                                                                                <i class="fa fa-download"></i>&nbsp;
+                                                                                <span class="bold">Download</span>
+                                                                        </button> &nbsp; 
+                                        
+                                                                        <button style="margin-top: 10px;" class="btn btn-danger" type="button" (click)="deleteFile(data.fileId, data.collectionName , data.fileName)">
+                                                                                <i class="fa fa-trash"></i>&nbsp;
+                                                                                <span class="bold">Delete</span>
+                                                                        </button> &nbsp; &nbsp;
+                                                                </ng-template>
+                                                                </p-column>
+                                                                </p-dataTable>
+                                                        </div>
+                                                </div>
+                                </div>
+                </div>
+</div>
+
+<p-toast position="top-right"></p-toast>

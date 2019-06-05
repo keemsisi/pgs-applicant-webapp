@@ -1,0 +1,12 @@
+.bs {
+    -webkit-box-shadow: -1px 3px 71px -9px rgba(0,0,0,0.77);
+    -moz-box-shadow: -1px 3px 71px -9px rgba(0,0,0,0.77);
+    box-shadow: -1px 3px 71px -9px rgba(0,0,0,0.77);
+}
+
+.br {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
